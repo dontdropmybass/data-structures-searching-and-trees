@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+search.o: search.cpp.o
+
+.PHONY : search.o
+
+# target to build an object file
+search.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.o
+.PHONY : search.cpp.o
+
+search.i: search.cpp.i
+
+.PHONY : search.i
+
+# target to preprocess a source file
+search.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.i
+.PHONY : search.cpp.i
+
+search.s: search.cpp.s
+
+.PHONY : search.s
+
+# target to generate assembly for a file
+search.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.s
+.PHONY : search.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... search.o"
+	@echo "... search.i"
+	@echo "... search.s"
 .PHONY : help
 
 

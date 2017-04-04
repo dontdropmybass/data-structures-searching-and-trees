@@ -83,6 +83,12 @@
 		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/main.cpp">
 			<Option target="data_structures_searching_and_trees"/>
 		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/search.cpp">
+			<Option target="data_structures_searching_and_trees"/>
+		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/search.h">
+			<Option target="data_structures_searching_and_trees"/>
+		</Unit>
 		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

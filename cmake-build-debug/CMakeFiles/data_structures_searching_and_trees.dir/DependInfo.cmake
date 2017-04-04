@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/alex/repos/data-structures-searching-and-trees/main.cpp" "/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o"
+  "/Users/alex/repos/data-structures-searching-and-trees/search.cpp" "/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

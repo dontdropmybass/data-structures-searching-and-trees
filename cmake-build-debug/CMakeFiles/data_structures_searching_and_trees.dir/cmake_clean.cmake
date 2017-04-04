@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o"
+  "CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.o"
   "data_structures_searching_and_trees.pdb"
   "data_structures_searching_and_trees"
 )
