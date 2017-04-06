@@ -6,11 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/Users/alex/repos/data-structures-searching-and-trees/bst.cpp
+bst.h
+/Users/alex/repos/data-structures-searching-and-trees/bst.h
+
+/Users/alex/repos/data-structures-searching-and-trees/bst.h
+iostream
+-
+iomanip
+-
+
+/Users/alex/repos/data-structures-searching-and-trees/filehandler.cpp
+filehandler.h
+/Users/alex/repos/data-structures-searching-and-trees/filehandler.h
+
+/Users/alex/repos/data-structures-searching-and-trees/filehandler.h
+fstream
+-
+bst.h
+/Users/alex/repos/data-structures-searching-and-trees/bst.h
+
 /Users/alex/repos/data-structures-searching-and-trees/main.cpp
 iostream
 -
 search.h
 /Users/alex/repos/data-structures-searching-and-trees/search.h
+bst.h
+/Users/alex/repos/data-structures-searching-and-trees/bst.h
 
 /Users/alex/repos/data-structures-searching-and-trees/search.cpp
 search.h

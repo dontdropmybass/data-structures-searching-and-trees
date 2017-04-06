@@ -123,6 +123,60 @@ data_structures_searching_and_trees/fast:
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/build
 .PHONY : data_structures_searching_and_trees/fast
 
+bst.o: bst.cpp.o
+
+.PHONY : bst.o
+
+# target to build an object file
+bst.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o
+.PHONY : bst.cpp.o
+
+bst.i: bst.cpp.i
+
+.PHONY : bst.i
+
+# target to preprocess a source file
+bst.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.i
+.PHONY : bst.cpp.i
+
+bst.s: bst.cpp.s
+
+.PHONY : bst.s
+
+# target to generate assembly for a file
+bst.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.s
+.PHONY : bst.cpp.s
+
+filehandler.o: filehandler.cpp.o
+
+.PHONY : filehandler.o
+
+# target to build an object file
+filehandler.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o
+.PHONY : filehandler.cpp.o
+
+filehandler.i: filehandler.cpp.i
+
+.PHONY : filehandler.i
+
+# target to preprocess a source file
+filehandler.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.i
+.PHONY : filehandler.cpp.i
+
+filehandler.s: filehandler.cpp.s
+
+.PHONY : filehandler.s
+
+# target to generate assembly for a file
+filehandler.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.s
+.PHONY : filehandler.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... data_structures_searching_and_trees"
+	@echo "... bst.o"
+	@echo "... bst.i"
+	@echo "... bst.s"
+	@echo "... filehandler.o"
+	@echo "... filehandler.i"
+	@echo "... filehandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
