@@ -19,13 +19,13 @@ struct Node {
 };
 
 class bst {
-private:
-    Node* root;
-
 public:
+    Node* root;
     bst() : root(NULL) {}
 
     void Insert(std::string num);
+
+    bool bst::search(std::string num, Node* &node);
 
     void Insert(int num);
 

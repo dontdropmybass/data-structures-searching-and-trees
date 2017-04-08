@@ -27,7 +27,33 @@ void bst::Insert(std::string num, Node* &node) {
         cout << "Node value " << node->data << " already exists.";
         cout << endl;
     }
+    //TODO call balance method
 }
+
+bool bst::search(std::string num, Node* &node)
+{
+    bool isEqual;
+    //if this node is null, node was not found
+    if (root == 0) {
+        isEqual = false;
+    }
+
+   //if the string is lower, look left
+    else if (num < bst::root->data) {
+        isEqual = search(root->left, num);
+    }
+
+    //else look right
+    else if (num > bst::root->data) {
+        isEqual = search(root->right, num);
+    }
+
+    else {
+        isEqual = true;
+    }
+    return isEqual;
+}
+
 
 void bst::Remove(std::string num) {
     bool found = false;
