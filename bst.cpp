@@ -32,9 +32,22 @@ void bst::Insert(std::string num, Node* &node) {
     }
     else if(num < node->data) {
         Insert( num, node->left );
+
+        if (calcHeight(node->left) - calcHeight(node->right)) {
+            if (num < node->left->data)
+                singleLeftRotation(node);
+            else
+                doubleLeftRotation(node);
+        }
     }
     else if(num > node->data) {
         Insert( num, node->right );
+        if (calcHeight(node->right) - calcHeight(node->left)) {
+            if (num > node->right->data)
+                singleRightRotation(node);
+            else
+                doubleRightRotation(node);
+        }
     }
     else {
         cout << "Node value " << node->data << " already exists.";
