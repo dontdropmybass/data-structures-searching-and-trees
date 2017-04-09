@@ -25,7 +25,15 @@ public:
 
     void Insert(std::string num);
 
-    bool bst::search(std::string num, Node* &node);
+    bool search(std::string num, Node* &node);
+
+    void singleLeftRotation(Node* &node);
+
+    void doubleLeftRotation(Node* &node);
+
+    void singleRightRotation(Node* &node);
+
+    void doubleRightRotation(Node* &node);
 
     void Insert(int num);
 
