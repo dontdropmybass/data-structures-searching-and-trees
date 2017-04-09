@@ -12,13 +12,13 @@ void bst::Insert(int num) {
     Insert(std::to_string(num), root);
 }
 
-int bst::calcHeight(Node* &node){
+int bst::calcHeight(Node* &node) {
     int left, right;
 
     if(node==NULL)
         return 0;
-    left = Height(node->left);
-    right = Height(node->right);
+    left = calcHeight(node->left);
+    right = calcHeight(node->right);
     if(left > right)
         return left+1;
     else
@@ -44,26 +44,22 @@ void bst::Insert(std::string num, Node* &node) {
 
 bool bst::search(std::string num, Node* &node)
 {
-    bool isEqual;
     //if this node is null, node was not found
     if (root == 0) {
-        isEqual = false;
+        return false;
     }
 
    //if the string is lower, look left
     else if (num < bst::root->data) {
-        isEqual = search(root->left, num);
+        return search(num, root->left);
     }
 
     //else look right
     else if (num > bst::root->data) {
-        isEqual = search(root->right, num);
+        return search(num, root->right);
     }
 
-    else {
-        isEqual = true;
-    }
-    return isEqual;
+    return true;
 }
 
 

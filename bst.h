@@ -25,6 +25,8 @@ public:
 
     void Insert(std::string num);
 
+    int calcHeight(Node* &node);
+
     bool search(std::string num, Node* &node);
 
     void singleLeftRotation(Node* &node);
