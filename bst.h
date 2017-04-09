@@ -19,13 +19,21 @@ struct Node {
 };
 
 class bst {
-private:
-    Node* root;
-
 public:
+    Node* root;
     bst() : root(NULL) {}
 
     void Insert(std::string num);
+
+    bool search(std::string num, Node* &node);
+
+    void singleLeftRotation(Node* &node);
+
+    void doubleLeftRotation(Node* &node);
+
+    void singleRightRotation(Node* &node);
+
+    void doubleRightRotation(Node* &node);
 
     void Insert(int num);
 

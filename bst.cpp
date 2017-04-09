@@ -12,6 +12,19 @@ void bst::Insert(int num) {
     Insert(std::to_string(num), root);
 }
 
+int bst::calcHeight(Node* &node){
+    int left, right;
+
+    if(node==NULL)
+        return 0;
+    left = Height(node->left);
+    right = Height(node->right);
+    if(left > right)
+        return left+1;
+    else
+        return right+1;
+}
+
 void bst::Insert(std::string num, Node* &node) {
     if (node == NULL) {
         node = new Node();
@@ -28,6 +41,31 @@ void bst::Insert(std::string num, Node* &node) {
         cout << endl;
     }
 }
+
+bool bst::search(std::string num, Node* &node)
+{
+    bool isEqual;
+    //if this node is null, node was not found
+    if (root == 0) {
+        isEqual = false;
+    }
+
+   //if the string is lower, look left
+    else if (num < bst::root->data) {
+        isEqual = search(root->left, num);
+    }
+
+    //else look right
+    else if (num > bst::root->data) {
+        isEqual = search(root->right, num);
+    }
+
+    else {
+        isEqual = true;
+    }
+    return isEqual;
+}
+
 
 void bst::Remove(std::string num) {
     bool found = false;
@@ -93,6 +131,36 @@ void bst::PrintTree(ostream& output, Node* &node, int indent) {
         PrintTree(output, node->left, indent + 5);
     }
 }
+
+void bst::singleLeftRotation(Node* &node){
+    Node* rotateNode;
+    rotateNode = node->left;
+    node->left = rotateNode->right;
+    rotateNode->right = node;
+    node = rotateNode;
+}
+
+
+void bst::doubleLeftRotation(Node* &node){
+    singleRightRotation(node->left);
+    singleLeftRotation(node);
+}
+
+
+void bst::singleRightRotation(Node* &node){
+    Node* rotateNode;
+    rotateNode = node->right;
+    node->right = rotateNode->left;
+    rotateNode->left = node;
+    node = rotateNode;
+}
+
+
+void bst::doubleRightRotation(Node* &node){
+    singleLeftRotation(node->right);
+    singleRightRotation(node);
+}
+
 
 ostream& operator<<( ostream &output, bst &searchtree ) {
     searchtree.PrintTree( output, searchtree.root, 0 );
