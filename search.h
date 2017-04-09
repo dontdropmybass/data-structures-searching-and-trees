@@ -10,6 +10,8 @@ class search {
 public:
     static int findIndexOfValueUsingBinarySearch(int searchValue, int* array, int arraySize);
     static int findIndexOfValueUsingSequentialSearch(int searchValue, int* array, int arraySize);
+    static int findIndexOfValueUsingRecursiveBinarySearch(int searchValue, int* array, int start, int end);
+    static int findIndexOfValueUsingRecursiveSequentialSearch(int searchValue, int* array, int arraySize);
 };
 
 

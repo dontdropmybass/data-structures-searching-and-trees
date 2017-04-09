@@ -46,3 +46,36 @@ int search::findIndexOfValueUsingSequentialSearch(int searchValue, int* array, i
     }
     return -1;
 }
+
+/// searches through an array for a value using a recursive binary search algorithm
+/// \param searchValue : the value you are searching for
+/// \param array : the array in which you are searching for the value
+/// \param arraySize :
+/// \return the index of the searchValue in the array, or -1 if it's not found
+int search::findIndexOfValueUsingRecursiveBinarySearch(int searchValue, int *array, int start, int end) {
+    int middle = (start + end) / 2;
+    if(end < start) {
+        return -1;
+    }
+
+    if(searchValue==array[middle]) {
+        return middle;
+    }
+    else if(searchValue<array[middle]) {
+        return findIndexOfValueUsingRecursiveBinarySearch(searchValue, array, start, middle - 1);
+    }
+    else {
+        return findIndexOfValueUsingRecursiveBinarySearch(searchValue, array, middle + 1, end);
+    }
+}
+
+/// searches through an array for a value using a recursive sequential search algorithm
+/// \param searchValue : the value you are searching for
+/// \param array : the array in which you are searching for the value
+/// \param arraySize :
+/// \return the index of the searchValue in the array, or -1 if it's not found
+int search::findIndexOfValueUsingRecursiveSequentialSearch(int searchValue, int *array, int arraySize) {
+    if (arraySize<1) return -1;
+    else if (array[arraySize-1]==searchValue) return arraySize-1;
+    else return findIndexOfValueUsingRecursiveSequentialSearch(searchValue, array, arraySize - 1);
+}
