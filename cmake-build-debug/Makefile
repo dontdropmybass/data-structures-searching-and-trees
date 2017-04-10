@@ -204,6 +204,33 @@ filehandler.cpp.s:
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.s
 .PHONY : filehandler.cpp.s
 
+linkedlist.o: linkedlist.cpp.o
+
+.PHONY : linkedlist.o
+
+# target to build an object file
+linkedlist.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/linkedlist.cpp.o
+.PHONY : linkedlist.cpp.o
+
+linkedlist.i: linkedlist.cpp.i
+
+.PHONY : linkedlist.i
+
+# target to preprocess a source file
+linkedlist.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/linkedlist.cpp.i
+.PHONY : linkedlist.cpp.i
+
+linkedlist.s: linkedlist.cpp.s
+
+.PHONY : linkedlist.s
+
+# target to generate assembly for a file
+linkedlist.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/linkedlist.cpp.s
+.PHONY : linkedlist.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -276,6 +303,9 @@ help:
 	@echo "... filehandler.o"
 	@echo "... filehandler.i"
 	@echo "... filehandler.s"
+	@echo "... linkedlist.o"
+	@echo "... linkedlist.i"
+	@echo "... linkedlist.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -8,13 +8,16 @@ CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o: ../bst.cpp
 CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o: ../bst.h
 
 CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../avl.h
-CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../bst.h
 CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../filehandler.cpp
 CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../filehandler.h
+CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../linkedlist.h
+
+CMakeFiles/data_structures_searching_and_trees.dir/linkedlist.cpp.o: ../linkedlist.cpp
+CMakeFiles/data_structures_searching_and_trees.dir/linkedlist.cpp.o: ../linkedlist.h
 
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../avl.h
-CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../bst.h
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../filehandler.h
+CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../linkedlist.h
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../main.cpp
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../search.h
 

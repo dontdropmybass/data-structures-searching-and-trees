@@ -6,15 +6,16 @@
 #define DATA_STRUCTURES_SEARCHING_AND_TREES_FILEHANDLER_H
 
 #include <fstream>
+#include <regex>
 #include <stdlib.h>
 #include "avl.h"
-#include "bst.h"
+#include "linkedlist.h"
 
 class filehandler {
 public:
     static avl loadIntoAVLTree(std::string fileName);
+    static linkedlist loadIntoLinkedList(std::string fileName);
     static std::string loadIntoString(std::string fileName);
-    static std::istream& safeGetLine(std::istream& is, std::string& t);
 };
 
 

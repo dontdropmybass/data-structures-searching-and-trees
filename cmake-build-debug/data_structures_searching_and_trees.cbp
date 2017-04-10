@@ -98,6 +98,12 @@
 		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/filehandler.h">
 			<Option target="data_structures_searching_and_trees"/>
 		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/linkedlist.cpp">
+			<Option target="data_structures_searching_and_trees"/>
+		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/linkedlist.h">
+			<Option target="data_structures_searching_and_trees"/>
+		</Unit>
 		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/main.cpp">
 			<Option target="data_structures_searching_and_trees"/>
 		</Unit>

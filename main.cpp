@@ -1,7 +1,7 @@
 #include <iostream>
 #include "avl.h"
-#include "bst.h"
 #include "filehandler.h"
+#include "linkedlist.h"
 #include "search.h"
 
 int main() {
@@ -31,11 +31,30 @@ int main() {
 
     // now for the avl tree part
 
-    avl searchtree = filehandler::loadIntoAVLTree(
+    avl tree = filehandler::loadIntoAVLTree(
             "/Users/alex/repos/data-structures-searching-and-trees/dictionary.txt"
-            // TODO: make this relative so it'll work on windows too
+            // TODO: make this relative so it'll work everywhere
     );
-    std::cout << searchtree << std::endl;
+
+    std::cout << tree << std::endl;
+
+    linkedlist ll = filehandler::loadIntoLinkedList(
+            "/Users/alex/repos/data-structures-searching-and-trees/misspelled.txt"
+            // TODO: make this relative so it'll work everywhere
+    );
+
+    std::string word;
+    linkedlist::Node* node = ll.head;
+
+    std::cout << "Words that are misspelled:" << std::endl;
+
+    while (node != NULL) {
+        word = node->data;
+        if (!tree.search(word)) {
+            std::cout << "\t" << word << std::endl;
+        }
+        node = node->next;
+    }
 
     return 0;
 }

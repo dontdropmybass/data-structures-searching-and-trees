@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o"
   "CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o"
   "CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o"
+  "CMakeFiles/data_structures_searching_and_trees.dir/linkedlist.cpp.o"
   "data_structures_searching_and_trees.pdb"
   "data_structures_searching_and_trees"
 )

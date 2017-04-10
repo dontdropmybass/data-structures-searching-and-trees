@@ -66,7 +66,7 @@ avl::Node *avl::balance(avl::Node *p) {
 }
 
 avl::Node *avl::insert(avl::Node *p, std::string data) {
-    if (p==NULL) {
+    if (!p) {
         return new Node(data);
     }
     else if (data < p->data) {
@@ -81,6 +81,29 @@ avl::Node *avl::insert(avl::Node *p, std::string data) {
 avl::Node *avl::insert(std::string data) {
     root = insert(root, data);
     return root;
+}
+
+bool avl::search(std::string data, Node* node) {
+    //if this Node is null, Node was not found
+    if (node == NULL) {
+        return false;
+    }
+
+        //if the string is lower, look left
+    else if (data < node->data) {
+        return search(data, node->left);
+    }
+
+        //else look right
+    else if (data > node->data) {
+        return search(data, node->right);
+    }
+
+    return true;
+}
+
+bool avl::search(std::string data) {
+    search(data, root);
 }
 
 void avl::printTree(std::ostream &output, Node *&node, int indent) {
