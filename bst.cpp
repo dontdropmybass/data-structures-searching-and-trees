@@ -4,12 +4,12 @@
 
 #include "bst.h"
 
-void bst::Insert(std::string num) {
-    Insert(num, root);
+Node* bst::Insert(std::string num) {
+    return Insert(num, root);
 }
 
-void bst::Insert(int num) {
-    Insert(std::to_string(num));
+Node* bst::Insert(int num) {
+    return Insert(std::to_string(num));
 }
 
 int bst::calcHeight(Node* &node) {
@@ -25,7 +25,7 @@ int bst::calcHeight(Node* &node) {
         return right+1;
 }
 
-void bst::Insert(std::string num, Node* node) {
+Node* bst::Insert(std::string num, Node* node) {
     if (node == NULL) {
         node = new Node();
         node->data = num;
@@ -54,9 +54,7 @@ void bst::Insert(std::string num, Node* node) {
         cout << endl;
     }
 
-    if (root == NULL) {
-        root = node;
-    }
+    return node;
 }
 
 bool bst::search(std::string num, Node* &node)

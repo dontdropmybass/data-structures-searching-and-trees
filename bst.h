@@ -23,7 +23,7 @@ public:
     Node* root;
     bst() : root(NULL) {}
 
-    void Insert(std::string num);
+    Node* Insert(std::string num);
 
     int calcHeight(Node* &node);
 
@@ -37,9 +37,9 @@ public:
 
     void doubleRightRotation(Node* &node);
 
-    void Insert(int num);
+    Node* Insert(int num);
 
-    void Insert(std::string num, Node* node);
+    Node* Insert(std::string num, Node* node);
 
     void Remove(std::string num);
 
