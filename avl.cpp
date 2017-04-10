@@ -88,18 +88,18 @@ bool avl::search(std::string data, Node* node) {
     if (node == NULL) {
         return false;
     }
-
         //if the string is lower, look left
     else if (data < node->data) {
-        return search(data, node->left);
+        search(data, node->left);
     }
-
         //else look right
     else if (data > node->data) {
-        return search(data, node->right);
+        search(data, node->right);
     }
 
-    return true;
+    if(node->data == data){
+        return true;
+    }
 }
 
 bool avl::search(std::string data) {
