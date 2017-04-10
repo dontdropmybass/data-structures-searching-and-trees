@@ -7,6 +7,7 @@
 
 #include <fstream>
 #include <regex>
+#include <sstream>
 #include <stdlib.h>
 #include "avl.h"
 #include "linkedlist.h"

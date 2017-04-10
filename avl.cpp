@@ -90,20 +90,18 @@ bool avl::search(std::string data, Node* node) {
     }
         //if the string is lower, look left
     else if (data < node->data) {
-        search(data, node->left);
+        return search(data, node->left);
     }
         //else look right
     else if (data > node->data) {
-        search(data, node->right);
+        return search(data, node->right);
     }
 
-    if(node->data == data){
-        return true;
-    }
+    return true;
 }
 
 bool avl::search(std::string data) {
-    search(data, root);
+    return search(data, root);
 }
 
 void avl::printTree(std::ostream &output, Node *&node, int indent) {

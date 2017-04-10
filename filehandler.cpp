@@ -26,13 +26,14 @@ linkedlist filehandler::loadIntoLinkedList(std::string fileName) {
     if (!ifs) {
         throw std::invalid_argument("Bad file");
     }
-    std::string temp;
     while (!ifs.eof()) {
-        temp.clear();
+        std::string temp;
+        std::stringstream result;
         ifs >> temp;
-        if (std::regex_match(temp, std::regex("([a-zA-Z]+)") )) {
-            ll.add(temp);
-        }
+        std::regex nonLetterCharacters("[^a-zA-Z]");
+        std::regex_replace(std::ostream_iterator<char>(result), temp.begin(), temp.end(), nonLetterCharacters, "");
+
+        ll.add(result.str());
     }
     ifs.close();
     return ll;
