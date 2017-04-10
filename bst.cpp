@@ -4,12 +4,13 @@
 
 #include "bst.h"
 
-Node* bst::Insert(std::string num) {
-    return Insert(num, root);
+Node* bst::insert(std::string num) {
+    root = insert(num, root);
+    return root;
 }
 
-Node* bst::Insert(int num) {
-    return Insert(std::to_string(num));
+Node* bst::insert(int num) {
+    return insert(std::to_string(num));
 }
 
 int bst::calcHeight(Node* &node) {
@@ -25,42 +26,49 @@ int bst::calcHeight(Node* &node) {
         return right+1;
 }
 
-Node* bst::Insert(std::string num, Node* node) {
+Node* bst::insert(std::string num, Node *node) {
     if (node == NULL) {
         node = new Node();
         node->data = num;
     }
     else if(num < node->data) {
-        Insert( num, node->left );
-
-        if (calcHeight(node->left) - calcHeight(node->right)) {
-            if (num < node->left->data)
-                singleLeftRotation(node);
-            else
-                doubleLeftRotation(node);
-        }
+        node->left = insert(num, node->left);
     }
     else if(num > node->data) {
-        Insert( num, node->right );
-        if (calcHeight(node->right) - calcHeight(node->left)) {
-            if (num > node->right->data)
-                singleRightRotation(node);
-            else
-                doubleRightRotation(node);
-        }
+        node->right = insert(num, node->right);
     }
     else {
         cout << "Node value " << node->data << " already exists.";
         cout << endl;
     }
 
+    int lefth, righth;
+    lefth = calcHeight(node->left);
+    righth = calcHeight(node->right);
+
+    if (lefth < righth) {
+        if (node->left != NULL && calcHeight(node->left->left) + 1 < calcHeight(node->left->right)) {
+            singleLeftRotation(node);
+        }
+//        else {
+//            doubleLeftRotation(node);
+//        }
+    }
+    else if (righth > lefth) {
+        if (node->right != NULL && calcHeight(node->right->left) + 1< calcHeight(node->right->right)) {
+            doubleLeftRotation(node);
+        }
+//        else {
+//            singleLeftRotation(node);
+//        }
+    }
+
     return node;
 }
 
-bool bst::search(std::string num, Node* &node)
-{
+bool bst::search(std::string num, Node* &node) {
     //if this node is null, node was not found
-    if (root == 0) {
+    if (root == NULL) {
         return false;
     }
 
@@ -78,7 +86,7 @@ bool bst::search(std::string num, Node* &node)
 }
 
 
-void bst::Remove(std::string num) {
+void bst::remove(std::string num) {
     bool found = false;
     Node* node = root;
     Node* parent = NULL;
@@ -133,17 +141,15 @@ void bst::Remove(std::string num) {
     delete node;
 }
 
-void bst::PrintTree(ostream& output, Node* &node, int indent) {
+void bst::printTree(ostream &output, Node *&node, int indent) {
     if(node != NULL) {
-        PrintTree(output, node->right, indent + 5);
-
+        printTree(output, node->right, indent + 5);
         output << setw(indent) << node->data << endl;
-
-        PrintTree(output, node->left, indent + 5);
+        printTree(output, node->left, indent + 5);
     }
 }
 
-void bst::singleLeftRotation(Node* &node){
+void bst::singleLeftRotation(Node* &node) {
     Node* rotateNode;
     rotateNode = node->left;
     node->left = rotateNode->right;
@@ -152,13 +158,13 @@ void bst::singleLeftRotation(Node* &node){
 }
 
 
-void bst::doubleLeftRotation(Node* &node){
+void bst::doubleLeftRotation(Node* &node) {
     singleRightRotation(node->left);
     singleLeftRotation(node);
 }
 
 
-void bst::singleRightRotation(Node* &node){
+void bst::singleRightRotation(Node* &node) {
     Node* rotateNode;
     rotateNode = node->right;
     node->right = rotateNode->left;
@@ -167,14 +173,14 @@ void bst::singleRightRotation(Node* &node){
 }
 
 
-void bst::doubleRightRotation(Node* &node){
+void bst::doubleRightRotation(Node* &node) {
     singleLeftRotation(node->right);
     singleRightRotation(node);
 }
 
 
-ostream& operator<<( ostream &output, bst &searchtree ) {
-    searchtree.PrintTree( output, searchtree.root, 0 );
+ostream& operator<<(ostream &output, bst &searchtree) {
+    searchtree.printTree(output, searchtree.root, 0);
 
     return output;
 }

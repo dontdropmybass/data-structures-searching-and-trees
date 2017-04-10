@@ -34,7 +34,7 @@ int main() {
             "/Users/alex/repos/data-structures-searching-and-trees/dictionary.txt"
             // TODO: make this relative so it'll work on windows too
     );
-    searchtree;
+    std::cout << searchtree << std::endl;
 
     return 0;
 }

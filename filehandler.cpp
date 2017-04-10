@@ -12,9 +12,10 @@ bst filehandler::loadIntoAVLTree(std::string fileName) {
         throw std::invalid_argument("Bad file");
     }
     std::string temp;
+    int i = 0;
     while (!ifs.eof()) {
         getline(ifs, temp);
-        searchtree.Insert(temp);
+        searchtree.insert(temp);
     }
     ifs.close();
     return searchtree;

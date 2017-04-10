@@ -123,6 +123,33 @@ data_structures_searching_and_trees/fast:
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/build
 .PHONY : data_structures_searching_and_trees/fast
 
+avlThatWorks.o: avlThatWorks.cpp.o
+
+.PHONY : avlThatWorks.o
+
+# target to build an object file
+avlThatWorks.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o
+.PHONY : avlThatWorks.cpp.o
+
+avlThatWorks.i: avlThatWorks.cpp.i
+
+.PHONY : avlThatWorks.i
+
+# target to preprocess a source file
+avlThatWorks.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.i
+.PHONY : avlThatWorks.cpp.i
+
+avlThatWorks.s: avlThatWorks.cpp.s
+
+.PHONY : avlThatWorks.s
+
+# target to generate assembly for a file
+avlThatWorks.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.s
+.PHONY : avlThatWorks.cpp.s
+
 bst.o: bst.cpp.o
 
 .PHONY : bst.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... data_structures_searching_and_trees"
+	@echo "... avlThatWorks.o"
+	@echo "... avlThatWorks.i"
+	@echo "... avlThatWorks.s"
 	@echo "... bst.o"
 	@echo "... bst.i"
 	@echo "... bst.s"

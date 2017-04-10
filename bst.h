@@ -23,7 +23,7 @@ public:
     Node* root;
     bst() : root(NULL) {}
 
-    Node* Insert(std::string num);
+    Node* insert(std::string num);
 
     int calcHeight(Node* &node);
 
@@ -37,13 +37,13 @@ public:
 
     void doubleRightRotation(Node* &node);
 
-    Node* Insert(int num);
+    Node* insert(int num);
 
-    Node* Insert(std::string num, Node* node);
+    Node* insert(std::string num, Node *node);
 
-    void Remove(std::string num);
+    void remove(std::string num);
 
-    void PrintTree(ostream& output, Node* &node, int indent);
+    void printTree(ostream &output, Node *&node, int indent);
 
     friend ostream& operator<<( ostream &output, bst &searchtree );
 };

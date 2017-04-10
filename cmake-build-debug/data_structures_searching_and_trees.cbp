@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/avlThatWorks.cpp">
+			<Option target="data_structures_searching_and_trees"/>
+		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/avlThatWorks.h">
+			<Option target="data_structures_searching_and_trees"/>
+		</Unit>
 		<Unit filename="/Users/alex/repos/data-structures-searching-and-trees/bst.cpp">
 			<Option target="data_structures_searching_and_trees"/>
 		</Unit>

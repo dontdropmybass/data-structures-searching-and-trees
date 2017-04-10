@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/alex/repos/data-structures-searching-and-trees/cmake-b
 CMakeFiles/data_structures_searching_and_trees.dir/all:
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/depend
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target data_structures_searching_and_trees"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target data_structures_searching_and_trees"
 .PHONY : CMakeFiles/data_structures_searching_and_trees.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/data_structures_searching_and_trees.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/data_structures_searching_and_trees.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/data_structures_searching_and_trees.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/data_structures_searching_and_trees.dir/rule
