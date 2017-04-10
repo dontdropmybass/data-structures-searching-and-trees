@@ -151,6 +151,11 @@ void bst::printTree(ostream &output, Node *&node, int indent) {
 
 void bst::singleLeftRotation(Node* &node) {
     Node* rotateNode;
+	//I think I found the issue
+	//pretty sure the next line should just be rotateNode = node
+	//because we pass it the node->right in the double rotation method
+	//actually we should just pass it the node in the double rotation methods, then this would all work
+	//probably.
     rotateNode = node->left;
     node->left = rotateNode->right;
     rotateNode->right = node;
@@ -159,13 +164,19 @@ void bst::singleLeftRotation(Node* &node) {
 
 
 void bst::doubleLeftRotation(Node* &node) {
-    singleRightRotation(node->left);
+	//trying to pass it just the node because in the single method it gets the left node anyways
+    singleRightRotation(node);
     singleLeftRotation(node);
 }
 
 
 void bst::singleRightRotation(Node* &node) {
     Node* rotateNode;
+	//I think I found the issue
+	//pretty sure the next line should just be rotateNode = node
+	//because we pass it the node->right in the double rotation method
+	//actually we should just pass it the node in the double rotation methods, then this would all work
+	//probably.
     rotateNode = node->right;
     node->right = rotateNode->left;
     rotateNode->left = node;
@@ -174,7 +185,8 @@ void bst::singleRightRotation(Node* &node) {
 
 
 void bst::doubleRightRotation(Node* &node) {
-    singleLeftRotation(node->right);
+	//trying to pass it just the node because in the single method it gets the right node anyways
+    singleLeftRotation(node);
     singleRightRotation(node);
 }
 
