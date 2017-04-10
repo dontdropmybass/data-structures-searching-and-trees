@@ -123,32 +123,32 @@ data_structures_searching_and_trees/fast:
 	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/build
 .PHONY : data_structures_searching_and_trees/fast
 
-avlThatWorks.o: avlThatWorks.cpp.o
+avl.o: avl.cpp.o
 
-.PHONY : avlThatWorks.o
+.PHONY : avl.o
 
 # target to build an object file
-avlThatWorks.cpp.o:
-	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o
-.PHONY : avlThatWorks.cpp.o
+avl.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o
+.PHONY : avl.cpp.o
 
-avlThatWorks.i: avlThatWorks.cpp.i
+avl.i: avl.cpp.i
 
-.PHONY : avlThatWorks.i
+.PHONY : avl.i
 
 # target to preprocess a source file
-avlThatWorks.cpp.i:
-	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.i
-.PHONY : avlThatWorks.cpp.i
+avl.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.i
+.PHONY : avl.cpp.i
 
-avlThatWorks.s: avlThatWorks.cpp.s
+avl.s: avl.cpp.s
 
-.PHONY : avlThatWorks.s
+.PHONY : avl.s
 
 # target to generate assembly for a file
-avlThatWorks.cpp.s:
-	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.s
-.PHONY : avlThatWorks.cpp.s
+avl.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.s
+.PHONY : avl.cpp.s
 
 bst.o: bst.cpp.o
 
@@ -267,9 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... data_structures_searching_and_trees"
-	@echo "... avlThatWorks.o"
-	@echo "... avlThatWorks.i"
-	@echo "... avlThatWorks.s"
+	@echo "... avl.o"
+	@echo "... avl.i"
+	@echo "... avl.s"
 	@echo "... bst.o"
 	@echo "... bst.i"
 	@echo "... bst.s"

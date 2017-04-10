@@ -1,4 +1,5 @@
 #include <iostream>
+#include "avl.h"
 #include "bst.h"
 #include "filehandler.h"
 #include "search.h"
@@ -30,7 +31,7 @@ int main() {
 
     // now for the avl tree part
 
-    bst searchtree = filehandler::loadIntoAVLTree(
+    avl searchtree = filehandler::loadIntoAVLTree(
             "/Users/alex/repos/data-structures-searching-and-trees/dictionary.txt"
             // TODO: make this relative so it'll work on windows too
     );

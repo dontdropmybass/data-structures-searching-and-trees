@@ -7,11 +7,12 @@
 
 #include <fstream>
 #include <stdlib.h>
+#include "avl.h"
 #include "bst.h"
 
 class filehandler {
 public:
-    static bst loadIntoAVLTree(std::string fileName);
+    static avl loadIntoAVLTree(std::string fileName);
     static std::string loadIntoString(std::string fileName);
     static std::istream& safeGetLine(std::istream& is, std::string& t);
 };

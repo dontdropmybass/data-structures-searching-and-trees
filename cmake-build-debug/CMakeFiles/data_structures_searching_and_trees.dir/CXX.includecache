@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/alex/repos/data-structures-searching-and-trees/avl.cpp
+avl.h
+/Users/alex/repos/data-structures-searching-and-trees/avl.h
+
+/Users/alex/repos/data-structures-searching-and-trees/avl.h
+iostream
+-
+iomanip
+-
+
 /Users/alex/repos/data-structures-searching-and-trees/bst.cpp
 bst.h
 /Users/alex/repos/data-structures-searching-and-trees/bst.h
@@ -25,12 +35,16 @@ fstream
 -
 stdlib.h
 -
+avl.h
+/Users/alex/repos/data-structures-searching-and-trees/avl.h
 bst.h
 /Users/alex/repos/data-structures-searching-and-trees/bst.h
 
 /Users/alex/repos/data-structures-searching-and-trees/main.cpp
 iostream
 -
+avl.h
+/Users/alex/repos/data-structures-searching-and-trees/avl.h
 bst.h
 /Users/alex/repos/data-structures-searching-and-trees/bst.h
 filehandler.h

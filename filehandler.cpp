@@ -5,8 +5,8 @@
 #include "filehandler.h"
 
 //filehandler open code
-bst filehandler::loadIntoAVLTree(std::string fileName) {
-    bst searchtree;
+avl filehandler::loadIntoAVLTree(std::string fileName) {
+    avl searchtree;
     std::ifstream ifs(fileName);
     if (!ifs) {
         throw std::invalid_argument("Bad file");

@@ -153,28 +153,28 @@ CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o.provides: C
 CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o.provides.build: CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o
 
 
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o: CMakeFiles/data_structures_searching_and_trees.dir/flags.make
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o: ../avlThatWorks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o -c /Users/alex/repos/data-structures-searching-and-trees/avlThatWorks.cpp
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o: CMakeFiles/data_structures_searching_and_trees.dir/flags.make
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o: ../avl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o -c /Users/alex/repos/data-structures-searching-and-trees/avl.cpp
 
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alex/repos/data-structures-searching-and-trees/avlThatWorks.cpp > CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.i
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alex/repos/data-structures-searching-and-trees/avl.cpp > CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.i
 
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alex/repos/data-structures-searching-and-trees/avlThatWorks.cpp -o CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.s
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alex/repos/data-structures-searching-and-trees/avl.cpp -o CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.s
 
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.requires:
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.requires:
 
-.PHONY : CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.requires
+.PHONY : CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.requires
 
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.provides: CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.requires
-	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.provides.build
-.PHONY : CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.provides
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.provides: CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/data_structures_searching_and_trees.dir/build.make CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.provides.build
+.PHONY : CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.provides
 
-CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.provides.build: CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o
+CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.provides.build: CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o
 
 
 # Object files for target data_structures_searching_and_trees
@@ -183,7 +183,7 @@ data_structures_searching_and_trees_OBJECTS = \
 "CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.o" \
 "CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o" \
 "CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o" \
-"CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o"
+"CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o"
 
 # External object files for target data_structures_searching_and_trees
 data_structures_searching_and_trees_EXTERNAL_OBJECTS =
@@ -192,7 +192,7 @@ data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_tr
 data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.o
 data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o
 data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o
-data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o
+data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o
 data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/build.make
 data_structures_searching_and_trees: CMakeFiles/data_structures_searching_and_trees.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alex/repos/data-structures-searching-and-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable data_structures_searching_and_trees"
@@ -207,7 +207,7 @@ CMakeFiles/data_structures_searching_and_trees.dir/requires: CMakeFiles/data_str
 CMakeFiles/data_structures_searching_and_trees.dir/requires: CMakeFiles/data_structures_searching_and_trees.dir/search.cpp.o.requires
 CMakeFiles/data_structures_searching_and_trees.dir/requires: CMakeFiles/data_structures_searching_and_trees.dir/bst.cpp.o.requires
 CMakeFiles/data_structures_searching_and_trees.dir/requires: CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o.requires
-CMakeFiles/data_structures_searching_and_trees.dir/requires: CMakeFiles/data_structures_searching_and_trees.dir/avlThatWorks.cpp.o.requires
+CMakeFiles/data_structures_searching_and_trees.dir/requires: CMakeFiles/data_structures_searching_and_trees.dir/avl.cpp.o.requires
 
 .PHONY : CMakeFiles/data_structures_searching_and_trees.dir/requires
 
