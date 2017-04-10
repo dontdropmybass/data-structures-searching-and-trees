@@ -5,7 +5,7 @@
 #include "filehandler.h"
 
 //filehandler open code
-auto filehandler::loadIntoAVLTree(char* fileName) {
+bst filehandler::loadIntoAVLTree(std::string fileName) {
     bst searchtree;
     std::ifstream ifs(fileName);
     if (!ifs) {
@@ -13,14 +13,14 @@ auto filehandler::loadIntoAVLTree(char* fileName) {
     }
     std::string temp;
     while (!ifs.eof()) {
-        safeGetLine(ifs,temp);
+        getline(ifs, temp);
         searchtree.Insert(temp);
     }
     ifs.close();
     return searchtree;
 }
 
-auto filehandler::loadIntoString(char* fileName) {
+std::string filehandler::loadIntoString(std::string fileName) {
     std::string out = "";
 
     std::ifstream ifs(fileName);

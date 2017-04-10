@@ -6,13 +6,14 @@
 #define DATA_STRUCTURES_SEARCHING_AND_TREES_FILEHANDLER_H
 
 #include <fstream>
+#include <stdlib.h>
 #include "bst.h"
 
 class filehandler {
 public:
-    auto loadIntoAVLTree(char* fileName);
-    auto loadIntoString(char* fileName);
-    std::istream& safeGetLine(std::istream& is, std::string& t);
+    static bst loadIntoAVLTree(std::string fileName);
+    static std::string loadIntoString(std::string fileName);
+    static std::istream& safeGetLine(std::istream& is, std::string& t);
 };
 
 

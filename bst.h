@@ -39,7 +39,7 @@ public:
 
     void Insert(int num);
 
-    void Insert(std::string num, Node* &node);
+    void Insert(std::string num, Node* node);
 
     void Remove(std::string num);
 

@@ -9,6 +9,7 @@ CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../filehan
 CMakeFiles/data_structures_searching_and_trees.dir/filehandler.cpp.o: ../filehandler.h
 
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../bst.h
+CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../filehandler.h
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../main.cpp
 CMakeFiles/data_structures_searching_and_trees.dir/main.cpp.o: ../search.h
 

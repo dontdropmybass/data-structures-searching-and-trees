@@ -23,16 +23,20 @@ filehandler.h
 /Users/alex/repos/data-structures-searching-and-trees/filehandler.h
 fstream
 -
+stdlib.h
+-
 bst.h
 /Users/alex/repos/data-structures-searching-and-trees/bst.h
 
 /Users/alex/repos/data-structures-searching-and-trees/main.cpp
 iostream
 -
-search.h
-/Users/alex/repos/data-structures-searching-and-trees/search.h
 bst.h
 /Users/alex/repos/data-structures-searching-and-trees/bst.h
+filehandler.h
+/Users/alex/repos/data-structures-searching-and-trees/filehandler.h
+search.h
+/Users/alex/repos/data-structures-searching-and-trees/search.h
 
 /Users/alex/repos/data-structures-searching-and-trees/search.cpp
 search.h

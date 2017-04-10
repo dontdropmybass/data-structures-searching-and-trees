@@ -9,7 +9,7 @@ void bst::Insert(std::string num) {
 }
 
 void bst::Insert(int num) {
-    Insert(std::to_string(num), root);
+    Insert(std::to_string(num));
 }
 
 int bst::calcHeight(Node* &node) {
@@ -25,7 +25,7 @@ int bst::calcHeight(Node* &node) {
         return right+1;
 }
 
-void bst::Insert(std::string num, Node* &node) {
+void bst::Insert(std::string num, Node* node) {
     if (node == NULL) {
         node = new Node();
         node->data = num;
@@ -52,6 +52,10 @@ void bst::Insert(std::string num, Node* &node) {
     else {
         cout << "Node value " << node->data << " already exists.";
         cout << endl;
+    }
+
+    if (root == NULL) {
+        root = node;
     }
 }
 

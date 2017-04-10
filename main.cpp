@@ -1,6 +1,7 @@
 #include <iostream>
-#include "search.h"
 #include "bst.h"
+#include "filehandler.h"
+#include "search.h"
 
 int main() {
     // searching
@@ -29,40 +30,11 @@ int main() {
 
     // now for the avl tree part
 
-    bst searchtree;
-
-    searchtree.Insert( 5 );
-    searchtree.Insert( 3 );
-    searchtree.Insert( 7 );
-    searchtree.Insert( 2 );
-    searchtree.Insert( 1 );
-    searchtree.Insert( 4 );
-    searchtree.Insert( 6 );
-    searchtree.Insert( 8 );
-    searchtree.Insert(10 );
-
-
-    std::cout << searchtree << endl;
-    std::cin.ignore();
-
-    // test 2
-    std::cout << "\n\nTest 2\n";
-    std::cout << "-----\n";
-
-    searchtree.Remove( std::to_string(7) );
-
-    std::cout << searchtree << endl;
-    std::cin.ignore();
-
-    searchtree.Insert(7);
-    std::cout << searchtree << endl;
-    std::cin.ignore();
-
-    searchtree.Insert(7);
-
-    std::cout << searchtree << endl;
-
-    std::cin.ignore();
+    bst searchtree = filehandler::loadIntoAVLTree(
+            "/Users/alex/repos/data-structures-searching-and-trees/dictionary.txt"
+            // TODO: make this relative so it'll work on windows too
+    );
+    searchtree;
 
     return 0;
 }
