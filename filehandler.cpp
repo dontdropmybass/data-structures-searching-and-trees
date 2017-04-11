@@ -14,6 +14,7 @@ avl filehandler::loadIntoAVLTree(std::string fileName) {
     std::string temp;
     while (!ifs.eof()) {
         getline(ifs, temp);
+        std::transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
         searchtree.insert(temp);
     }
     ifs.close();
@@ -32,7 +33,8 @@ linkedlist filehandler::loadIntoLinkedList(std::string fileName) {
         ifs >> temp;
         std::regex nonLetterCharacters("[^a-zA-Z]");
         std::regex_replace(std::ostream_iterator<char>(result), temp.begin(), temp.end(), nonLetterCharacters, "");
-
+        temp = result.str();
+        std::transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
         ll.add(result.str());
     }
     ifs.close();
